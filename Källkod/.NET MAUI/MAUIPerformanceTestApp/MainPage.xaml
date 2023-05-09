@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIPerformanceTestApp.MainPage">
+
+    
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Button Text="Fibonacci"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="OnFibonacciButtonClicked"/>
+
+        <Label Text="Fibonacci: ms"
+               x:Name="FibonacciTimeText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="GPS"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="OnGPSButtonClicked"/>
+
+        <Label Text="GPS: ms"
+               x:Name="GPSTimeText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="API"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="OnAPIButtonClicked"/>
+
+        <Label Text="API: ms"
+               x:Name="APITimeText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Label Text="Save file: ms"
+               x:Name="SaveFileTimeText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Label Text="Read file: ms"
+               x:Name="ReadFileTimeText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        
+        <Label Text=""
+               x:Name="ErrorText"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+    </VerticalStackLayout>
+    
+
+</ContentPage>

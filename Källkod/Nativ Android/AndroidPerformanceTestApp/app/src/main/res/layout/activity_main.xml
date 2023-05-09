@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/fibonacciTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fibonacci: ms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fibonacciBtn" />
+
+    <Button
+        android:id="@+id/fibonacciBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fibonacci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GPSBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fibonacciTimeText" />
+
+    <TextView
+        android:id="@+id/gpsTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gps: ms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GPSBtn" />
+    <Button
+        android:id="@+id/APIBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpsTimeText" />
+
+
+    <TextView
+        android:id="@+id/apiTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API: ms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APIBtn" />
+
+    <TextView
+        android:id="@+id/saveFileTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save file: ms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apiTimeText" />
+
+    <TextView
+        android:id="@+id/readFileTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read file: ms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveFileTimeText" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readFileTimeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
